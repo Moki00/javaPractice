@@ -1,2 +1,3 @@
-# javaPractice
-this is logging my Java Practice
+# Java Practice
+
+This is logging my Java Practice

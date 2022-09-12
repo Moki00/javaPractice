@@ -1,2 +1,2 @@
 # javaPractice
-this is logging my Java Practice
+this logs my Java Practice

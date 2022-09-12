@@ -1,3 +1,3 @@
 # Java Practice
 
-This is logging my Java Practice
+This logs my Java Practice for HackerRank

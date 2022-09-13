@@ -18,7 +18,7 @@ public class Array2D {
 		upRight.add("1 7");
 		System.out.println(upRight);
 
-		// get initial grid
+//		 get initial grid
 		int length = upRight.size(); // 3
 		int highRo = 0; // 4 rows
 		int highCo = 0; // 7 columns

@@ -16,11 +16,12 @@ public class StringsRepeat {
     }
 
 	public static void main(String[] args) {
-		String str = "a";
-		int repeat = 0;
+		String str = "io";
+		int repeat = 4;
 		
 // Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
 		System.out.println(repeatStr(repeat, str));
+		
 
 	}
 

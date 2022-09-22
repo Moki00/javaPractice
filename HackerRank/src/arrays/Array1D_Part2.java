@@ -2,7 +2,8 @@ package arrays;
 
 public class Array1D_Part2 {
 
-	 public static void main(String[] args) {
+	 @SuppressWarnings("unused")
+	public static void main(String[] args) {
 		 /*
 		 We're standing at index 0 of an n-element array named game. From some index i (where ), you can perform one of the following moves:
 

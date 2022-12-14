@@ -3,12 +3,12 @@ package interview;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public class new111 {
+public class lonelyIntMap {
 
 	public static void main(String[] args) {
 		
-		// L is the list
 		List<Integer> L = new ArrayList<>();
 
 		L.add(1);
@@ -19,8 +19,6 @@ public class new111 {
 		
 		System.out.println(lonelyinteger(L));
 
-		    
-
 		}
 	
 	public static int lonelyinteger(List<Integer> a) {
@@ -29,18 +27,29 @@ public class new111 {
 			return 0;
 		}
 		
-		HashMap<Integer, Integer> map = new HashMap<>();
+		HashMap<Integer, Boolean> map = new HashMap<>();
 		
 		for (Integer in : a) {
 			
 			if(map.containsKey(in)) {
-				return in;
+				map.put(in, false);
+			} else {
+				map.put(in, true);
 			}
-			map.put(in, in);
+		}
+		
+//		System.out.println(map);
+
+		for (Map.Entry<Integer, Boolean> entry : map.entrySet()) {
+			Integer key = entry.getKey();
+			Boolean val = entry.getValue();
+			
+			if(val==true) {
+				return key;
+			}
 		}
 		
 		return 0;
-	    // Write your code here
-
+		
 	    }
 }

@@ -5,20 +5,16 @@ public class testing3 {
 	public static void main(String[] args) {
 
 		try {
-			System.out.println("A");
-			badMethod();
-			System.out.println("B");
-		} catch (Exception ex) {
+			Float f1= new Float("3.0");
+			int x = f1.intValue();
+			byte b = f1.byteValue();
+			double d=f1.doubleValue();
+			System.out.println(x+b+d);
+		} catch (NumberFormatException e) {
 			System.out.println("C");
-		} finally {
-			System.out.println("D");
 		}
-
 	}
-
-	private static void badMethod() {
-		throw new Error();
-
-	}
-
 }
+
+//comments
+

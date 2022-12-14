@@ -1,51 +1,40 @@
 package hashTables;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class hashOfSets {
 
-	public static void main(String[] args) {
-//		int m = 6;
-//		int n = 4;
-		
-		List<String> magazine = new ArrayList<String>();
-		Collections.addAll(magazine, "give", "me", "one", "grand", "today", "night");
-		
-		List<String> note = new ArrayList<String>();
-		Collections.addAll(note, "give", "one", "grand", "today");
-		
-		System.out.println(magazine.toString());
-		System.out.println(note);
-		
-		checkMagazine(magazine, note);
+	public static void main(String[] args) throws IOException {
+		System.out.println(check3(new Object[] {66, 101}, 66));
+		System.out.println(check3(new Object[] {80, 117, 115, 104, 45, 85, 112, 115}, 45));
+		System.out.println(check3(new Object[] {'t', 'e', 's', 't'}, 'e'));
+		System.out.println(check3(new Object[] {"what", "a", "great", "kata"}, "kat"));
 	}
 
-	public static void checkMagazine(List<String> magazine, List<String> note) {
-		// Write your code here
-
+	public static boolean check(Object[] a, Object x) {
+		List<Object> list = Arrays.asList(a);
+		return list.contains(x);
 	}
 
-//
-//public class Solution {
-//    public static void main(String[] args) throws IOException {
-//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-//
-//        String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
-//
-//        int m = Integer.parseInt(firstMultipleInput[0]);
-//
-//        int n = Integer.parseInt(firstMultipleInput[1]);
-//
-//        List<String> magazine = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-//            .collect(toList());
-//
-//        List<String> note = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-//            .collect(toList());
-//
-//        Result.checkMagazine(magazine, note);
-//
-//        bufferedReader.close();
-//    }
+	public static boolean check2(Object[] a, Object x) {
+		for (Object obj : a) {
+			if (Objects.equals(x, obj)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static boolean check3(Object[] a, Object x) {
+		for (int i=0; i<a.length; i++) {
+			if (Objects.equals(x, a[i])) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 }

@@ -2,12 +2,26 @@ package testing;
 
 public class testing12 {
 
-	public static void main(String[] args) {
+	private int salary;
+    private String grade;
 
-		int a = 1;
-		int b = 0;
-		int c = a / b;
-		System.out.println(c);
+	public int getSalary() {
+		return salary;
 	}
 
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+	public static void main(String[] args) {
+	
+	}
 }

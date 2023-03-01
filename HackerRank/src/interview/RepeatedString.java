@@ -25,11 +25,11 @@ public class RepeatedString {
 
 		// how many of s-String fit in n-numbers
 		long factor = (n / s.length());
-		System.out.println(factor);
+		System.out.println("factor: "+factor);
 		
 		// what's the remainder
 		long rem = (n % s.length());
-		System.out.println(rem);
+		System.out.println("remainder: "+rem);
 		
 		// new count becomes the num of a's times the num of strings
 		count = factor * count;
@@ -96,22 +96,4 @@ public class RepeatedString {
 		}
 		return numOfAs;
 	}
-
-//public class Solution {
-//    public static void main(String[] args) throws IOException {
-//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-//
-//        String s = bufferedReader.readLine();
-//
-//        long n = Long.parseLong(bufferedReader.readLine().trim());
-//
-//        long result = Result.repeatedString(s, n);
-//
-//        bufferedWriter.write(String.valueOf(result));
-//        bufferedWriter.newLine();
-//
-//        bufferedReader.close();
-//        bufferedWriter.close();
-//    }
 }

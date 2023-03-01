@@ -15,8 +15,8 @@ public class BribesInLine {
 		Print "Too chaotic" if someone has bribed more than 2 people.
 		 */
 
-		List<Integer> q = new ArrayList<Integer>(Arrays.asList(2, 1, 5, 3, 4)); // 3
-		List<Integer> q2 = new ArrayList<Integer>(Arrays.asList(2, 5, 1, 3, 4)); // Too chaotic
+		List<Integer> q = Arrays.asList(2, 1, 5, 3, 4); // 3
+		List<Integer> q2 = Arrays.asList(2, 5, 1, 3, 4); // Too chaotic
 		List<Integer> q3 = new ArrayList<Integer>(Arrays.asList(1, 2, 5, 3, 7, 8, 6, 4)); // expect 7
 
 		minimumBribes(q3); // change this to see in console

@@ -16,8 +16,8 @@ public class JumpingClouds {
 	public static void main(String[] args) {
 
 		// 0's are good, must avoid 1's
-//		List<Integer> c = Arrays.asList(0, 0, 1, 0, 0, 1, 0); // 4 jumps
-		List<Integer> c = Arrays.asList(0, 1, 0, 0, 0, 1, 0); // 3 jumps
+		List<Integer> c = Arrays.asList(0, 0, 1, 0, 0, 1, 0); // 4 jumps
+//		List<Integer> c = Arrays.asList(0, 1, 0, 0, 0, 1, 0); // 3 jumps
 
 		System.out.println(jumpingOnClouds(c));
 	}

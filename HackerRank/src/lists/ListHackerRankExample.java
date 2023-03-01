@@ -17,7 +17,6 @@ public class ListHackerRankExample {
 		//		Scanner s = new Scanner(System.in);
 		//		N = s.nextInt(); 
 		N = 5;
-		System.out.println("N = "+N);
 
 		// L is the list
 		List<Integer> L = new ArrayList<>();
@@ -27,11 +26,6 @@ public class ListHackerRankExample {
 		L.add(1);
 		L.add(78);
 		L.add(12);
-
-		// each row in the grid
-		//		for (i = 0; i < N; i++) { // for each n lines
-		//			L.add(s.nextInt());
-		//		}
 
 		System.out.println("L = "+L); // L = [12, 0, 1, 78, 12]
 

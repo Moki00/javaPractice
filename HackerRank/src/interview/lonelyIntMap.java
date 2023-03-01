@@ -17,11 +17,43 @@ public class lonelyIntMap {
 		L.add(0);
 		L.add(12);
 		
-		System.out.println(lonelyinteger(L));
-
+		System.out.println(lonelyInteger(L));
+		
 		}
 	
-	public static int lonelyinteger(List<Integer> a) {
+	public static int lonelyPrimitiveInteger(List<Integer> a) {
+		
+		if(a.isEmpty()) {
+			return 0;
+		}
+		
+		HashMap<Integer, Boolean> map = new HashMap<>();
+		
+		for (Integer in : a) {
+			
+			if(map.containsKey(in)) {
+				map.put(in, false);
+			} else {
+				map.put(in, true);
+			}
+		}
+		
+//		System.out.println(map);
+
+		for (Map.Entry<Integer, Boolean> entry : map.entrySet()) {
+			Integer key = entry.getKey();
+			Boolean val = entry.getValue();
+			
+			if(val==true) {
+				return key;
+			}
+		}
+		
+		return 0;
+		
+	    }
+	
+	public static int lonelyInteger(List<Integer> a) {
 		
 		if(a.isEmpty()) {
 			return 0;

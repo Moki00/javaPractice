@@ -1,13 +1,10 @@
 package simple;
 
-public class HelloWorld {
+public class Abreviate {
 
 	public static void main(String[] args) {
 
 		System.out.println(abbrevName("Sam Harris")); // return S.H
-
-//		System.out.println(greet("Moki"));
-//		System.out.println(greet2());
 
 	}
 
@@ -36,14 +33,6 @@ public class HelloWorld {
 
 		String result = String.valueOf(initials).toUpperCase();
 		return result;
-	}
-
-	public static String greet(String name) {
-		return "Hello, " + name + " how are you doing today?";
-	}
-
-	public static String greet2() {
-		return "hello world!";
 	}
 
 }

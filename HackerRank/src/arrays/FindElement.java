@@ -12,8 +12,8 @@ public class FindElement {
 				28, 29, "needle", 31, 2, 3, 4, 5, 5, 6, 5, 4, 32, 3, 45, 54 };
 
 		System.out.println(findNeedle(haystack1)); // "found the needle at position 3"
-		System.out.println(findNeedle(haystack2)); // "found the needle at position 5"
-		System.out.println(findNeedle(haystack3)); // "found the needle at position 30"
+		System.out.println(findNeedleWithD(haystack2)); // "found the needle at position 5"
+		System.out.println(findNeedleSimple(haystack3)); // "found the needle at position 30"
 
 	}
 

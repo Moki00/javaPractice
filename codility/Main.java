@@ -11,7 +11,14 @@ public class Main {
         Distinct distinct = new Distinct();
         int[] Arr = {2, 1, 1, 2, 3, 1};
         System.out.println("Number of distinct elements: " + distinct.solution(Arr));
-        
+
+        Nested nested = new Nested();
+        String S = "{[()]}";
+        if(nested.nested(S) == 1) {
+            System.out.println(S + "Is properly nested");
+        } else {
+            System.out.println(S + "Is not nested");
+        }        
     }
     
 }

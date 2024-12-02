@@ -39,6 +39,11 @@ public class Main {
         int skip = 4;
         int uniqueChocos = euclidean.circleOfChoco(numOfChoco, skip);
         System.out.println("Unique chocos eaten: " + uniqueChocos);
+
+        CountFactors countFactors = new CountFactors();
+        int N = 24;
+        int factorsCount = countFactors.solution(N);
+        System.out.println("Number of factors of " + N + ": " + factorsCount);
     }
     
 }

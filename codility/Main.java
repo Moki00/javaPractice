@@ -41,9 +41,9 @@ public class Main {
         System.out.println("Unique chocos eaten: " + uniqueChocos);
 
         CountFactors countFactors = new CountFactors();
-        int N = 24;
-        int factorsCount = countFactors.solution(N);
-        System.out.println("Number of factors of " + N + ": " + factorsCount);
+        int num = 24;
+        int countedFac = countFactors.solution(num);
+        System.out.println("Number of factors of " + num + ": " + countedFac);
     }
     
 }

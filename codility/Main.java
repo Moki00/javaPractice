@@ -34,20 +34,27 @@ public class Main {
         // int profit = maxProfit.solution(dailyPrices);
         // System.out.println("Maximum profit: $" + profit);
 
-        Euclidean euclidean = new Euclidean();
-        int numOfChoco = 10;
-        int skip = 4;
-        int uniqueChocos = euclidean.circleOfChoco(numOfChoco, skip);
-        System.out.println("Unique chocos eaten: " + uniqueChocos);
+        // Euclidean euclidean = new Euclidean();
+        // int numOfChoco = 10;
+        // int skip = 4;
+        // int uniqueChocos = euclidean.circleOfChoco(numOfChoco, skip);
+        // System.out.println("Unique chocos eaten: " + uniqueChocos);
 
-        CountFactors countFactors = new CountFactors();
-        int num = 24;
-        int countedFac = countFactors.solution(num);
-        System.out.println("Number of factors of " + num + ": " + countedFac);
+        // CountFactors countFactors = new CountFactors();
+        // int num = 24;
+        // int countedFac = countFactors.solution(num);
+        // System.out.println("Number of factors of " + num + ": " + countedFac);
 
-        num = 2000111229;
-        countedFac = countFactors.solution(num);
-        System.out.println("Number of factors of " + num + ": " + countedFac);
+        // num = 2000111229;
+        // countedFac = countFactors.solution(num);
+        // System.out.println("Number of factors of " + num + ": " + countedFac);
+
+        NoOverLapSegments noOverLapSegments = new NoOverLapSegments();
+        int[] A = {1, 3, 7, 9, 9, 9};
+        int[] B = {5, 6, 8, 9, 10, 11};
+        int count = noOverLapSegments.solution(A, B);
+        System.out.println("Number of non-overlapping segments: " + count);
+
     }
     
 }

@@ -55,11 +55,17 @@ public class Main {
         // int count = noOverLapSegments.solution(A, B);
         // System.out.println("Number of non-overlapping segments: " + count);
 
-        ArrayUnpaired arrayUnpaired = new ArrayUnpaired();
-        int[] A = {2, 3, 2, 4, 1, 1, 4};
-        int unpaired = arrayUnpaired.solution(A);
-        System.out.println("Unpaired element: " + unpaired);
+        // ArrayUnpaired arrayUnpaired = new ArrayUnpaired();
+        // int[] A = {2, 3, 2, 4, 1, 1, 4};
+        // int unpaired = arrayUnpaired.solution(A);
+        // System.out.println("Unpaired element: " + unpaired);
         // 3 is the only element that does not have a pair.
+
+        MissingElem missingElem = new MissingElem();
+        int[] A = {2, 3, 1, 5};
+        int missing = missingElem.solution(A);
+        System.out.println("Missing element: " + missing);
+        // 4 is missing.
     }
     
 }

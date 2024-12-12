@@ -58,14 +58,21 @@ public class Main {
         // ArrayUnpaired arrayUnpaired = new ArrayUnpaired();
         // int[] A = {2, 3, 2, 4, 1, 1, 4};
         // int unpaired = arrayUnpaired.solution(A);
-        // System.out.println("Unpaired element: " + unpaired);
-        // 3 is the only element that does not have a pair.
-
-        MissingElem missingElem = new MissingElem();
-        int[] A = {2, 3, 1, 5};
-        int missing = missingElem.solution(A);
-        System.out.println("Missing element: " + missing);
-        // 4 is missing.
+        // System.out.println("Unpaired element: " + unpaired); // 3 is the only element that does not have a pair.
+        
+        // MissingElem missingElem = new MissingElem();
+        // int[] A = {2, 3, 1, 5};
+        // int missing = missingElem.solution(A);
+        // System.out.println("Missing element: " + missing); // 4 is missing.
+        
+        TapeEqual tapeEqual = new TapeEqual();
+        int[] A = {3, 1, 2, 2, 1, 3};
+        int index = tapeEqual.solution(A);
+        if (index != -1) {
+            System.out.println("Tape can be split at index: " + index);
+        } else {
+            System.out.println("No valid split point found.");
+        }
     }
     
 }

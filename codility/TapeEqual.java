@@ -1,6 +1,6 @@
 public class TapeEqual {
     
-    public int solution(int[] A) {
+    public int minimalDifference(int[] A) {
         // Calculate the total sum of the array
         int totalSum = 0;
         for (int num : A) {
@@ -10,17 +10,22 @@ public class TapeEqual {
         // Initialize left sum and right sum
         int leftSum = 0;
         int rightSum = totalSum;
+        int diff = Integer.MAX_VALUE;
 
-        // Iterate through the array to find the point where left and right sums are equal
+        // Iterate through the array to find the point where left and right sums are closest
         for (int i = 0; i < A.length - 1; i++) {
             leftSum += A[i];
             rightSum -= A[i];
 
             if (leftSum == rightSum) {
-                return i + 1; // Return the index where the tape can be split
+                return 0; // Return the index where the tape can be split
+            }
+            int currentDiff = Math.abs(leftSum - rightSum);
+            if (currentDiff < diff) {
+                diff = currentDiff;
             }
         }
 
-        return -1; // If no such point exists, return -1
+        return diff;
     }
 }

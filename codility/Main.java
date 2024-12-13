@@ -66,13 +66,9 @@ public class Main {
         // System.out.println("Missing element: " + missing); // 4 is missing.
         
         TapeEqual tapeEqual = new TapeEqual();
-        int[] A = {3, 1, 2, 2, 1, 3};
-        int index = tapeEqual.solution(A);
-        if (index != -1) {
-            System.out.println("Tape can be split at index: " + index);
-        } else {
-            System.out.println("No valid split point found.");
-        }
+        int[] Arr = {3, 1, -2, 1, 1, -3};
+        System.out.println("minimal difference is: " + tapeEqual.minimalDifference(Arr));
+
     }
     
 }

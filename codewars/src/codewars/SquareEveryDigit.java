@@ -1,8 +1,9 @@
 public class SquareEveryDigit {
 
     public static void main(String args[]){
-        System.out.println(squareDigits(9119));
+        System.out.println(squareDigits(9105));
         
+        System.out.println(squareDigits(3212)); //9414
     }
 
     public static int squareDigits(int n) {
@@ -11,9 +12,8 @@ public class SquareEveryDigit {
         
         while(n>0){
             int digit= n%10;
-            digit*=digit;
-            result=result+digit;
-            // System.out.print(result+".");
+            result=digit*digit+result;
+            System.out.print(result+".");
             n/=10;
         }
         if(result.isEmpty()){

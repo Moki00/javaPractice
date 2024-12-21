@@ -1,8 +1,10 @@
+import java.util.Stack;
+
 public class FishStream {
     public int solution(int[] A, int[] B) {
         int n = A.length;
-        int[] stack = new int[n];
-        int aliveFish = 0;
+        Stack<Integer> downstreamFishStack = new Stack<>();
+        int numAliveFish = 0;
 
         for (int i = 0; i < n; i++) {
             if (B[i] == 1) { // Downstream fish
@@ -17,6 +19,6 @@ public class FishStream {
             }
         }
 
-        return aliveFish + 1; // Number of surviving fish
+        return numAliveFish; // Number of surviving fish
     }
 }

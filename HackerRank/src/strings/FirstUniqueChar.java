@@ -54,7 +54,11 @@ public class FirstUniqueChar {
 	}
 
 	public static int firstUniqueCharIndexHashMap(String s) {
-		HashMap<K, V>
+		HashMap<Character, Integer> charCount = new HashMap<>();
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			charCount.put(c, charCount.getOrDefault(c, 0) + 1);
+		}
 		return -1; // Return -1 if no unique character found
 	}
 

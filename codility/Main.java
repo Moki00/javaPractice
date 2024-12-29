@@ -33,6 +33,12 @@ public class Main {
         int[] dailyPrices = {23199, 21010, 21123, 21366, 21013, 21367};
         int profit = maxProfit.solution(dailyPrices);
         System.out.println("Maximum profit: $" + profit);
+
+        Euclidean euclidean = new Euclidean();
+        int numOfChoco = 10;
+        int skip = 4;
+        int uniqueChocos = euclidean.circleOfChoco(numOfChoco, skip);
+        System.out.println("Unique chocos eaten: " + uniqueChocos);
     }
     
 }

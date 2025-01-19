@@ -1,5 +1,15 @@
 public class EquiLeader {
-    public int solution(int[] A) {
+
+    /**
+     * This equiFind method finds the number of equi leaders in the given array.
+     * An equi leader is defined as a position P such that the leader of the
+     * left part (A[0] to A[P]) and the leader of the right part (A[P+1] to A[N-1])
+     * are the same.
+     *
+     * @param A an array of integers
+     * @return the number of equi leaders
+     */
+    public int equiFind(int[] A) {
         int n = A.length;
         if (n == 0) return 0;
 

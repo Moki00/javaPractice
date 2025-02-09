@@ -1,13 +1,16 @@
-import java.util.Stack;
+import java.util.*;
 
 public class Main {
     // This is a simple Java program that prints "Hello world!" to the console.
     public static void main(String[] args) {
         
-        EquiLeader equiLeader = new EquiLeader();
-        int[] A = {4, 3, 4, 4, 4, 2};
-        int equiLeaders = equiLeader.equiFind(A);
-        System.out.println("Number of equi leaders in array " + java.util.Arrays.toString(A) + ": " + equiLeaders);
+        // Example usage of DistinctSlices
+        DistinctSlices distinctSlices = new DistinctSlices();
+        int M = 6; // Maximum value in array A
+        int[] B = {3, 4, 5, 5, 2};
+        int distinctCount = distinctSlices.solution(M, B);
+        System.out.println("Number of distinct slices in array " + Arrays.toString(B) + ": " + distinctCount);
+
 
     }
     

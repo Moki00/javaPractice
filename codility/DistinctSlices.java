@@ -10,20 +10,18 @@ public class DistinctSlices {
      */
     public int solution(int M, int[] A) {
         int n = A.length;
-        // int[] lastSeen = new int[M + 1];
-        int left = 0; // Left pointer for the sliding window
+        int[] lastSeen = new int[M + 1];
+        int left = 0; // all elements from left to right are distinct
         int count = 0; // Count of distinct slices
 
-        // boolean array to track the last seen index of each element
-        boolean[] seen = new boolean[M + 1]; // false by default
         for (int i = 0; i < n; i++) {
-            while (seen[A[i]]) {
-                seen[A[left]] = false; // Mark the leftmost element as not seen
-                left++;
+            
+            if (lastSeen[A[i]] > left) {
+                left = lastSeen[A[i]]; // Move the left pointer to the right of the last seen index
             }
-            seen[A[i]] = true; // Mark the current element as seen
-            count += (i - left + 1); // + distinct slice
-
+            lastSeen[A[i]] = i + 1; // Update the last seen index of A[i]
+            count += (i - left + 1); // Count the number of distinct slices ending at index i
+            
             if (count > 1_000_000_000) {
                 return 1_000_000_000; // Return early if count exceeds limit
             }

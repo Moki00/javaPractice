@@ -1,4 +1,4 @@
-public class frogJump {
+public class FrogJump {
     public int solution(int X, int Y, int D) {
         // Calculate the distance to cover
         double distance = Y - X;

@@ -1,4 +1,4 @@
-public class frogRiver {
+public class FrogRiver {
     // This is a simple Java program that finds the earliest time when a frog can cross a river.
     // The frog can jump to any position from 1 to 'last' and it needs to cover all positions.
     public int solution(int last, int[] Arr) {

@@ -28,6 +28,11 @@ public class Main {
         } else {
             System.out.println("No dominator found");
         }
+
+        MaxProfit maxProfit = new MaxProfit();
+        int[] dailyPrices = {23199, 21010, 21123, 21366, 21013, 21367};
+        int profit = maxProfit.solution(dailyPrices);
+        System.out.println("Maximum profit: $" + profit);
     }
     
 }

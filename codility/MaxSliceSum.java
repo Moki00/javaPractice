@@ -7,15 +7,20 @@ public class MaxSliceSum {
      * @return The maximum sum of any slice in the array.
      */
     public int solution(int[] A) {
-        int n = A.length;
-        if (n == 0) return 0;
 
+        // start the first element
         int maxSum = A[0];
-        int currentSum = Math.max(A[0], 0); // Start with the first element or 0
+        int currentSum = A[0];
 
-        for (int i = 1; i < n; i++) {
-            currentSum = Math.max(A[i], currentSum + A[i]);
+        for (int i = 1; i < A.length; i++) {
+
+            if (currentSum < 1) {
+                currentSum = 0;
+            } 
+
+            currentSum += A[i];
             maxSum = Math.max(maxSum, currentSum);
+
         }
 
         return maxSum;

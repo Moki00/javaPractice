@@ -15,10 +15,19 @@ public class Main {
         Nested nested = new Nested();
         String S = "{[()]}";
         if(nested.nested(S) == 1) {
-            System.out.println(S + "Is properly nested");
+            System.out.println(S + " is properly nested");
         } else {
-            System.out.println(S + "Is not nested");
-        }        
+            System.out.println(S + " is not nested");
+        }
+
+        Dominator dom = new Dominator();
+        int[] A = {3, 4, 3, 2, 3, -1, 3, 3};
+        int result = dom.dominator(A);
+        if(result != -1) {
+            System.out.println("Dominator is: " + A[result] + " at index: " + result);
+        } else {
+            System.out.println("No dominator found");
+        }
     }
     
 }

@@ -1,4 +1,3 @@
-// Package: codility
 public class CyclicRotation {
 
     public int[] solution(int[] Arr, int rotate) {
@@ -7,13 +6,13 @@ public class CyclicRotation {
             return Arr;            
         }
 
-        // If the number of rotations is greater than the length of the array,
-        // we can reduce it to the equivalent number of rotations
+        // If rotate is greater than the length of the array:
         rotate = rotate % Arr.length;
         // Create a new array to store the rotated values
         int[] rotatedArr = new int[Arr.length];
-        // Copy the last 'rotate' elements to the beginning of the new array
+        // Copy the last 'rotated' elements to the beginning of the new array
         for (int i = 0; i < rotate; i++) {
+            // Calculate the index of the element to be rotated
             rotatedArr[i] = Arr[Arr.length - rotate + i];
         }
         // Copy the remaining elements to the new array
